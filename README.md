@@ -1,1 +1,3 @@
-# Katmanl-MimariHastaneOtomasyonu
+# Katmanlı-MimariHastaneOtomasyonu
+
+hastane otomasyonu
