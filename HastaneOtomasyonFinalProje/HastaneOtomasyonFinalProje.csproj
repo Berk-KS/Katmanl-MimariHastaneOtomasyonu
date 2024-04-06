@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E3C546B4-3859-497D-9A46-8FCDEBEB2236}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HastaneOtomasyonFinalProje</RootNamespace>
+    <AssemblyName>HastaneOtomasyonFinalProje</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph">
+      <HintPath>References\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Hastane_DbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hastane_DbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hastane_DbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hastane_DbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hastane_DbDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hastane_DbDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hastane_DbDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hastane_DbDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hastane_DbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hastane_DbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hastane_DbDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hastane_DbDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hastane_DbDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hastane_DbDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hastane_DbDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hastane_DbDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hastane_DbDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hastane_DbDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hastane_DbDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hastane_DbDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hastane_DbDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hastane_DbDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hastane_DbDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hastane_DbDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="isKatmani\BransYönlendirici.cs" />
+    <Compile Include="isKatmani\DoktorYönlendirici.cs" />
+    <Compile Include="isKatmani\HastaYönlendirici.cs" />
+    <Compile Include="isKatmani\RandevuYönlendirici.cs" />
+    <Compile Include="isKatmani\SekreterYönlendirici.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sunumKatmani\DoktorAnaEkranFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\DoktorAnaEkranFrm.Designer.cs">
+      <DependentUpon>DoktorAnaEkranFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\DoktorGirisEkranFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\DoktorGirisEkranFrm.Designer.cs">
+      <DependentUpon>DoktorGirisEkranFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\DoktorHastaBilgiEkranFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\DoktorHastaBilgiEkranFrm.Designer.cs">
+      <DependentUpon>DoktorHastaBilgiEkranFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\GirisFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\GirisFrm.Designer.cs">
+      <DependentUpon>GirisFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\SekreterAnaEkranFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\SekreterAnaEkranFrm.Designer.cs">
+      <DependentUpon>SekreterAnaEkranFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\SekreterDoktorEkranFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\SekreterDoktorEkranFrm.Designer.cs">
+      <DependentUpon>SekreterDoktorEkranFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\SekreterGirisEkranFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\SekreterGirisEkranFrm.Designer.cs">
+      <DependentUpon>SekreterGirisEkranFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\SekreterHastaEkranFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\SekreterHastaEkranFrm.Designer.cs">
+      <DependentUpon>SekreterHastaEkranFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\SekreterRandevuEkranFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\SekreterRandevuEkranFrm.Designer.cs">
+      <DependentUpon>SekreterRandevuEkranFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\SekreterSekreterEkranıFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\SekreterSekreterEkranıFrm.Designer.cs">
+      <DependentUpon>SekreterSekreterEkranıFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="veriKatmani\ConnectionClass.cs" />
+    <Compile Include="veriKatmani\DB\BransDB.cs" />
+    <Compile Include="veriKatmani\DB\DoktorDB.cs" />
+    <Compile Include="veriKatmani\DB\HastaDB.cs" />
+    <Compile Include="veriKatmani\DB\RandevuDB.cs" />
+    <Compile Include="veriKatmani\DB\SekreterDB.cs" />
+    <Compile Include="veriKatmani\Prop\BransProps.cs" />
+    <Compile Include="veriKatmani\Prop\DoktorProps.cs" />
+    <Compile Include="veriKatmani\Prop\HastaProps.cs" />
+    <Compile Include="veriKatmani\Prop\RandevuProps.cs" />
+    <Compile Include="veriKatmani\Prop\SekreterProps.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="sunumKatmani\DoktorAnaEkranFrm.resx">
+      <DependentUpon>DoktorAnaEkranFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\DoktorGirisEkranFrm.resx">
+      <DependentUpon>DoktorGirisEkranFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\DoktorHastaBilgiEkranFrm.resx">
+      <DependentUpon>DoktorHastaBilgiEkranFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\GirisFrm.resx">
+      <DependentUpon>GirisFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\SekreterAnaEkranFrm.resx">
+      <DependentUpon>SekreterAnaEkranFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\SekreterDoktorEkranFrm.resx">
+      <DependentUpon>SekreterDoktorEkranFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\SekreterGirisEkranFrm.resx">
+      <DependentUpon>SekreterGirisEkranFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\SekreterHastaEkranFrm.resx">
+      <DependentUpon>SekreterHastaEkranFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\SekreterRandevuEkranFrm.resx">
+      <DependentUpon>SekreterRandevuEkranFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\SekreterSekreterEkranıFrm.resx">
+      <DependentUpon>SekreterSekreterEkranıFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Hastane_DbDataSet.xsc">
+      <DependentUpon>Hastane_DbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hastane_DbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hastane_DbDataSet.xss">
+      <DependentUpon>Hastane_DbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet1.xsc">
+      <DependentUpon>Hastane_DbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hastane_DbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hastane_DbDataSet1.xss">
+      <DependentUpon>Hastane_DbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet10.xsc">
+      <DependentUpon>Hastane_DbDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hastane_DbDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hastane_DbDataSet10.xss">
+      <DependentUpon>Hastane_DbDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet11.xsc">
+      <DependentUpon>Hastane_DbDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hastane_DbDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hastane_DbDataSet11.xss">
+      <DependentUpon>Hastane_DbDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet2.xsc">
+      <DependentUpon>Hastane_DbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hastane_DbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hastane_DbDataSet2.xss">
+      <DependentUpon>Hastane_DbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet3.xsc">
+      <DependentUpon>Hastane_DbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hastane_DbDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hastane_DbDataSet3.xss">
+      <DependentUpon>Hastane_DbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet4.xsc">
+      <DependentUpon>Hastane_DbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hastane_DbDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hastane_DbDataSet4.xss">
+      <DependentUpon>Hastane_DbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet5.xsc">
+      <DependentUpon>Hastane_DbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hastane_DbDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hastane_DbDataSet5.xss">
+      <DependentUpon>Hastane_DbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet6.xsc">
+      <DependentUpon>Hastane_DbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hastane_DbDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hastane_DbDataSet6.xss">
+      <DependentUpon>Hastane_DbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet7.xsc">
+      <DependentUpon>Hastane_DbDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hastane_DbDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hastane_DbDataSet7.xss">
+      <DependentUpon>Hastane_DbDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet8.xsc">
+      <DependentUpon>Hastane_DbDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hastane_DbDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hastane_DbDataSet8.xss">
+      <DependentUpon>Hastane_DbDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet9.xsc">
+      <DependentUpon>Hastane_DbDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Hastane_DbDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hastane_DbDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hastane_DbDataSet9.xss">
+      <DependentUpon>Hastane_DbDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
